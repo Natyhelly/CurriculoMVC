@@ -1,0 +1,200 @@
+body {
+    background-image: linear-gradient(to bottom, rgba(0, 193, 183, 0.5) 0%, rgba(57, 184, 176, 0) 100%);
+    height: 735px;
+    margin: 0px;
+    background-repeat: no-repeat;
+    cursor: default;
+}
+
+.minhaFoto {
+    margin-left: 25%;
+    margin-top: 20px;
+    width: 153px;
+    height: 204px;
+    z-index: 1;
+    position: relative;
+    border: 2px solid #FFFFFF;
+    cursor: pointer;
+}
+
+.vetores {
+    z-index: -1;
+    position: absolute;
+}
+
+#textoNome {
+    margin-top: 73px;
+    margin-left: -10%;
+    width: 528px;
+    height: 72px;
+    font-family: 'Lemonada', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 72px;
+    text-align: center;
+    color: #E793F4;
+    -webkit-text-stroke-width: 0.3px;
+    -webkit-text-stroke-color: #000000;
+    cursor: pointer;
+}
+
+#divPaginaTab {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 35px;
+    line-height: 42px;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0px 10px 4px rgba(0, 0, 0, 0.25);
+}
+
+#textoOla {
+    font-family: 'Birthstone';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 44px;
+    letter-spacing: 0.1em;
+    color: #000000;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #000000;
+}
+
+.container-botoes {
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    height: 60px;
+    flex-wrap: wrap;
+    margin-left: -60px;
+}
+
+.container-numeros {
+    display: flex;
+    flex-flow: row wrap;
+    width: 150px;
+}
+
+.caixas {
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding: 4px 0 0 0;
+    font-size: 25px;
+    border: 1px solid #000000;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+    .caixas:active {
+        background-color: gray;
+    }
+
+.container-calculadora {
+    display: flex;
+    flex-direction: column;
+    padding-top: 45px;
+}
+
+.visor-calculadora {
+    width: 200px;
+    height: 60px;
+    background-color: #E793F4;
+    margin-left: -60px;
+    border: 1px solid #000000;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    padding: 8px 0 0 5px;
+    font-size: 25px;
+}
+
+.container-jogo {
+    display: flex;
+    flex-direction: row;
+    padding-top: 45px;
+    width: 50%;
+}
+
+.botoesX-jogo {
+    display: flex;
+    flex-flow: row wrap;
+    width: 240px;
+    height: 240px;
+    margin-left: auto;
+    margin-right: -120px;
+}
+
+.caixas-jogo {
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.borda-lr {
+    border-left: 2px solid #000000;
+    border-right: 2px solid #000000;
+}
+
+.borda-tb {
+    border-top: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+}
+
+.borda-all {
+    border: 2px solid #000000;
+}
+
+#reiniciar-jogo {
+    text-align: center;
+    font-family: 'Lemonada';
+    cursor: pointer;
+    border: 2px solid #000000;
+    background-color: lightgreen;
+    width: 140px;
+    height: 30px;
+    margin-top: 25px;
+    margin-left: 50px;
+}
+
+#msg-vencedor {
+    z-index: 9;
+    width: 300px;
+    margin-top: 10%;
+    font-family: 'Loved by the King';
+    font-size: 55px;
+    text-align: center;
+    color: #E300BF;
+    text-shadow: 0px 10px 4px #33FF00;
+    transform: rotate(-9.9deg);
+    margin-left: 25%;
+}
+
+#formulario {
+    display: flex;
+    gap: 2px 20px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 500px;
+    height: 60px;
+    margin-left: 23%;
+}
+.mb-3 {
+    text-align: center;
+}
+.form-check-inline {
+    margin-right: 0 !important;
+}
+.table-danger {
+    --bs-table-bg: #F2CCF9 !important;
+}
+#divBotoes {
+    display: flex;
+    justify-content: space-around; 
+    width: 100px;
+    margin-left: 50%;
+}
