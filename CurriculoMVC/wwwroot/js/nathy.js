@@ -452,8 +452,8 @@ function gravarDados() {
                             <td>' + spotifySelecionado + '</td> \
                             <td>' + dataCadastro + '</td> \
                             <td style="display: flex; justify-content: space-around; height: 41px; align-items:center"> \
-                                <img onclick="editarLinha('+ idTr + ')" src="Imagens/Icones Bootstrap/pen.svg" alt="Bootstrap" width="16" height="16" style="cursor: pointer"> \
-                                <img onclick="deletarLinha('+ idTr + ')" src="Imagens/Icones Bootstrap/trash3.svg" alt="Bootstrap" width="16" height="16" style="cursor: pointer"> \
+                                <img onclick="editarLinha('+ idTr + ')" src="lib/bootstrap/dist/icons/pen.svg" alt="Bootstrap" width="16" height="16" style="cursor: pointer"> \
+                                <img onclick="deletarLinha('+ idTr + ')" src="lib/bootstrap/dist/icons/trash3.svg" alt="Bootstrap" width="16" height="16" style="cursor: pointer"> \
                             </td> \
                         </tr>';
 
