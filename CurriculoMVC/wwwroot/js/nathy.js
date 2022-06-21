@@ -342,7 +342,7 @@ function jogoDaVelha(casa) {
     var casa5 = document.getElementById('casa-5').innerText;
     var casa6 = document.getElementById('casa-6').innerText;
     var casa7 = document.getElementById('casa-7').innerText;
-    var casa8 = document.getElementById('casa-8').innerText;
+    var casa8 = document.getElementById('casa-8').innerText; 
     var casa9 = document.getElementById('casa-9').innerText;
 
     if (casa1 == 'X' && casa2 == 'X' && casa3 == 'X')
