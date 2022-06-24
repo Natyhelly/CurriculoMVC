@@ -1,198 +1,209 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+<img src="~/images/fundo.png" id="imagemFundo" />
+<div id="primeiraDiv" style="width: 20%; height: 250px; float: left">
 
-  <div id="primeiraDiv" style="width: 100%; height: 250px">
+        <img src="~/images/eu.png" class="minhaFoto" onclick="mensagemNaFoto('Essa sou eu');">
 
-        <img src="~/images/vetor1.png" class="vetores" style="margin-top: 23px; width: 303px; height: 31.36px">
-        <img src="~/images/vetor2.png" class="vetores" style="margin-top: 91.83px; width: 296px; height: 40px">
-        <img src="~/images/vetor3.png" class="vetores" style="margin-top: 164.83px; width: 350px; height: 42px">
-        <img src="~/images/vetor4.png" class="vetores" style="margin-top: 13px; right: 29px; width: 240px; height: 135.83px">
-        <img src="~/images/vetor5.png" class="vetores" style="margin-top: 160.56px; right: 0px; width: 208px; height: 36.27px">
-        <img src="~/images/vetor6.png" class="vetores" style="margin-top: 610.83px; left: 29px; width: 264px; height: 113px">
-        <img src="~/images/vetor7.png" class="vetores" style="margin-top: 570.83px; right: 0px; width: 303px; height: 153px">
-        <a href="https://github.com/Natyhelly" target="_blank" class="vetores" style="z-index: 3; margin-top: 266.83px; right: 46px">
-            <img src="~/images/github.png" style="height: 34px; border-radius: 50%">
-        </a>
-        <a href="https://www.linkedin.com/in/nathyelly-laguna-abreu/" target="_blank" class="vetores" style="z-index: 3; margin-top: 266.83px; right: 88px;">
-            <img src="~/images/linkedin.png" style="width: 35px; height: 34px; border-radius: 50%">
-        </a>
-
-        <div id="segundaDiv" style="width: 20%; height: 250px; float: left">
-
-            <img src="~/images/eu.png" class="minhaFoto" onclick="mensagemNaFoto('Essa sou eu');">
-
+    </div>
+<div id="segundaDiv" style="width: 80%; height: 250px; text-align: center">
+    <div id="textoNome" style="width: 100%">
+            <text onclick="alert('Meu nome')">
+                NATHYELLY LAGUNA ABREU
+            </text>
         </div>
-        <div id="terceiraDiv" style="width: 80%; height: 250px; float: right">
 
-            <div id="textoNome" style="width: 100%">
-                <text onclick="alert('Meu nome')">
-                    NATHYELLY LAGUNA ABREU
+        <div id="divPaginaTab" style="width: 100%">
+            <text id="textPaginaTab">
+                Sobre mim
+            </text>
+        </div>
+    @* <img src="~/images/vetor1.png" class="vetores" style="margin-top: 23px; width: 303px; height: 31.36px">
+    <img src="~/images/vetor2.png" class="vetores" style="margin-top: 91.83px; width: 296px; height: 40px">
+    <img src="~/images/vetor3.png" class="vetores" style="margin-top: 164.83px; width: 350px; height: 42px">
+    <img src="~/images/vetor4.png" class="vetores" style="margin-top: 13px; right: 29px; width: 240px; height: 135.83px">
+    <img src="~/images/vetor5.png" class="vetores" style="margin-top: 160.56px; right: 0px; width: 208px; height: 36.27px">
+    <img src="~/images/vetor6.png" class="vetores" style="margin-top: 610.83px; left: 29px; width: 264px; height: 113px">
+    <img src="~/images/vetor7.png" class="vetores" style="margin-top: 570.83px; right: 0px; width: 303px; height: 153px">*@
+    <a href="https://github.com/Natyhelly" target="_blank" class="vetores" style="z-index: 3; margin-top: 148px; right: 46px">
+        <img src="~/images/github.png" style="height: 34px; border-radius: 50%">
+    </a>
+    <a href="https://www.linkedin.com/in/nathyelly-laguna-abreu/" target="_blank" class="vetores" style="z-index: 3; margin-top: 148px; right: 88px;">
+        <img src="~/images/linkedin.png" style="width: 35px; height: 34px; border-radius: 50%">
+    </a>
+
+    
+    @*<div id="terceiraDiv" style="width: 80%; height: 250px; float: right">
+
+        <div id="textoNome" style="width: 100%">
+            <text onclick="alert('Meu nome')">
+                NATHYELLY LAGUNA ABREU
+            </text>
+        </div>
+
+        <div id="divPaginaTab" style="width: 100%; text-align: center; margin-left: -10%">
+            <text id="textPaginaTab">
+                Sobre mim
+            </text>
+        </div>
+
+    </div>*@
+</div>
+<div id="quartaDiv" style="width: 100%; border-top: 2px solid #D1FFFC">
+
+    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button onclick="alteraTextPaginaTab('Sobre mim')" class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Sobre Mim</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button onclick="alteraTextPaginaTab('Calculadora')" class="nav-link" id="pills-calculator-tab" data-bs-toggle="pill" data-bs-target="#pills-calculator" type="button" role="tab" aria-controls="pills-calculator" aria-selected="false">Calculadora</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button onclick="alteraTextPaginaTab('Jogo da Velha')" class="nav-link" id="pills-jogo-tab" data-bs-toggle="pill" data-bs-target="#pills-jogo" type="button" role="tab" aria-controls="pills-jogo" aria-selected="false">Jogo da Velha</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button onclick="alteraTextPaginaTab('Músicas')" class="nav-link" id="pills-musicas-tab" data-bs-toggle="pill" data-bs-target="#pills-musicas" type="button" role="tab" aria-controls="pills-musicas" aria-selected="false">Músicas</button>
+        </li>
+    </ul>
+    <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+
+            <div id="textoOla" style="margin-left: 20%">
+                <text>
+                    Olá! <br /> <br />
+
+                    Aosiaofushgj ifjosifjo ijasoijfoaijaifo jf  jofiwjfi jjo ija <br />
+                    ijfoaifja oj faoiefjaoiejawer awefk j <br />
+                    jajfaea  jfaia eklwr awiejfaidfjlan nfa nwel <br />
+                    nwien q a nfwo iefnlkfn <br />
+                    oweifn kfnwaefa
                 </text>
             </div>
+        </div>
+        <div class="tab-pane fade" id="pills-calculator" role="tabpanel" aria-labelledby="pills-calculator-tab" style="padding-left: 48%">
+            <input id="primeiroNumero" type="hidden" />
+            <input id="segundoNumero" type="hidden" />
+            <input id="operador" type="hidden" />
+            <input id="total" type="hidden" />
 
-            <div id="divPaginaTab" style="width: 100%; text-align: center; margin-left: -10%">
-                <text id="textPaginaTab">
-                    Sobre mim
-                </text>
+            <div class="container-calculadora">
+                <div id="visor" class="visor-calculadora">0</div>
+                <div class="container-botoes">
+                    <div class="container-numeros">
+                        <div id="botao-reset" onclick="montarCalculo('C','operador')" class="caixas"> C </div>
+                        <div id="botao-dividir" onclick="montarCalculo('/','operador')" class="caixas"> / </div>
+                        <div id="botao-vezes" onclick="montarCalculo('*','operador')" class="caixas"> * </div>
+                        <div id="botao-7" onclick="montarCalculo('7','numero')" class="caixas"> 7 </div>
+                        <div id="botao-8" onclick="montarCalculo('8','numero')" class="caixas"> 8 </div>
+                        <div id="botao-9" onclick="montarCalculo('9','numero')" class="caixas"> 9 </div>
+                        <div id="botao-4" onclick="montarCalculo('4','numero')" class="caixas"> 4 </div>
+                        <div id="botao-5" onclick="montarCalculo('5','numero')" class="caixas"> 5 </div>
+                        <div id="botao-6" onclick="montarCalculo('6','numero')" class="caixas"> 6 </div>
+                        <div id="botao-1" onclick="montarCalculo('1','numero')" class="caixas"> 1 </div>
+                        <div id="botao-2" onclick="montarCalculo('2','numero')" class="caixas"> 2 </div>
+                        <div id="botao-3" onclick="montarCalculo('3','numero')" class="caixas"> 3 </div>
+                        <div id="botao-0" onclick="montarCalculo('0','numero')" class="caixas" style="width: 100px"> 0 </div>
+                        <div id="botao-decimal" onclick="montarCalculo(',','numero')" class="caixas"> , </div>
+                    </div>
+                    <div class="container-simbolo">
+                        <div id="botao-backspace" onclick="montarCalculo('<-','operador')" class="caixas" style="font-size: 20px; padding-top: 15%"> ⌫ </div>
+                        <div id="botao-menos" onclick="montarCalculo('-','operador')" class="caixas"> - </div>
+                        <div id="botao-mais" onclick="montarCalculo('+','operador')" class="caixas"> + </div>
+                        <div id="botao-igual" onclick="montarCalculo('=','operador')" class="caixas" style="padding-top: 50%; width: 50px; height: 100px"> = </div>
+                    </div>
+                </div>
             </div>
 
         </div>
-    </div>
-    <div id="quartaDiv" style="width: 100%; border-top: 2px solid #D1FFFC">
 
-        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-            <li class="nav-item" role="presentation">
-                <button onclick="alteraTextPaginaTab('Sobre mim')" class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Sobre Mim</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button onclick="alteraTextPaginaTab('Calculadora')" class="nav-link" id="pills-calculator-tab" data-bs-toggle="pill" data-bs-target="#pills-calculator" type="button" role="tab" aria-controls="pills-calculator" aria-selected="false">Calculadora</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button onclick="alteraTextPaginaTab('Jogo da Velha')" class="nav-link" id="pills-jogo-tab" data-bs-toggle="pill" data-bs-target="#pills-jogo" type="button" role="tab" aria-controls="pills-jogo" aria-selected="false">Jogo da Velha</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button onclick="alteraTextPaginaTab('Músicas')" class="nav-link" id="pills-musicas-tab" data-bs-toggle="pill" data-bs-target="#pills-musicas" type="button" role="tab" aria-controls="pills-musicas" aria-selected="false">Músicas</button>
-            </li>
-        </ul>
-        <div class="tab-content" id="pills-tabContent">
-            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+        <div class="tab-pane fade" id="pills-jogo" role="tabpanel" aria-labelledby="pills-jogo-tab">
 
-                <div id="textoOla" style="margin-left: 20%">
-                    <text>
-                        Olá! <br /> <br />
+            <div class="container-jogo">
+                <div id="msg-vencedor"></div>
 
-                        Aosiaofushgj ifjosifjo ijasoijfoaijaifo jf  jofiwjfi jjo ija <br />
-                        ijfoaifja oj faoiefjaoiejawer awefk j <br />
-                        jajfaea  jfaia eklwr awiejfaidfjlan nfa nwel <br />
-                        nwien q a nfwo iefnlkfn <br />
-                        oweifn kfnwaefa
-                    </text>
-                </div>
-            </div>
-            <div class="tab-pane fade" id="pills-calculator" role="tabpanel" aria-labelledby="pills-calculator-tab" style="padding-left: 48%">
-                <input id="primeiroNumero" type="hidden" />
-                <input id="segundoNumero" type="hidden" />
-                <input id="operador" type="hidden" />
-                <input id="total" type="hidden" />
+                <div class="botoesX-jogo">
+                    <input id="proximoValor" value="X" type="hidden" />
+                    <input id="casasPreenchidas" value="" type="hidden" />
 
-                <div class="container-calculadora">
-                    <div id="visor" class="visor-calculadora">0</div>
-                    <div class="container-botoes">
-                        <div class="container-numeros">
-                            <div id="botao-reset" onclick="montarCalculo('C','operador')" class="caixas"> C </div>
-                            <div id="botao-dividir" onclick="montarCalculo('/','operador')" class="caixas"> / </div>
-                            <div id="botao-vezes" onclick="montarCalculo('*','operador')" class="caixas"> * </div>
-                            <div id="botao-7" onclick="montarCalculo('7','numero')" class="caixas"> 7 </div>
-                            <div id="botao-8" onclick="montarCalculo('8','numero')" class="caixas"> 8 </div>
-                            <div id="botao-9" onclick="montarCalculo('9','numero')" class="caixas"> 9 </div>
-                            <div id="botao-4" onclick="montarCalculo('4','numero')" class="caixas"> 4 </div>
-                            <div id="botao-5" onclick="montarCalculo('5','numero')" class="caixas"> 5 </div>
-                            <div id="botao-6" onclick="montarCalculo('6','numero')" class="caixas"> 6 </div>
-                            <div id="botao-1" onclick="montarCalculo('1','numero')" class="caixas"> 1 </div>
-                            <div id="botao-2" onclick="montarCalculo('2','numero')" class="caixas"> 2 </div>
-                            <div id="botao-3" onclick="montarCalculo('3','numero')" class="caixas"> 3 </div>
-                            <div id="botao-0" onclick="montarCalculo('0','numero')" class="caixas" style="width: 100px"> 0 </div>
-                            <div id="botao-decimal" onclick="montarCalculo(',','numero')" class="caixas"> , </div>
-                        </div>
-                        <div class="container-simbolo">
-                            <div id="botao-backspace" onclick="montarCalculo('<-','operador')" class="caixas" style="font-size: 20px; padding-top: 15%"> ⌫ </div>
-                            <div id="botao-menos" onclick="montarCalculo('-','operador')" class="caixas"> - </div>
-                            <div id="botao-mais" onclick="montarCalculo('+','operador')" class="caixas"> + </div>
-                            <div id="botao-igual" onclick="montarCalculo('=','operador')" class="caixas" style="padding-top: 50%; width: 50px; height: 100px"> = </div>
-                        </div>
-                    </div>
-                </div>
+                    <div id="casa-1" onclick="jogoDaVelha('casa-1')" class="caixas-jogo"></div>
+                    <div id="casa-2" onclick="jogoDaVelha('casa-2')" class="caixas-jogo borda-lr"></div>
+                    <div id="casa-3" onclick="jogoDaVelha('casa-3')" class="caixas-jogo"></div>
+                    <div id="casa-4" onclick="jogoDaVelha('casa-4')" class="caixas-jogo borda-tb"></div>
+                    <div id="casa-5" onclick="jogoDaVelha('casa-5')" class="caixas-jogo borda-all"></div>
+                    <div id="casa-6" onclick="jogoDaVelha('casa-6')" class="caixas-jogo borda-tb"></div>
+                    <div id="casa-7" onclick="jogoDaVelha('casa-7')" class="caixas-jogo"></div>
+                    <div id="casa-8" onclick="jogoDaVelha('casa-8')" class="caixas-jogo borda-lr"></div>
+                    <div id="casa-9" onclick="jogoDaVelha('casa-9')" class="caixas-jogo"></div>
 
-            </div>
-
-            <div class="tab-pane fade" id="pills-jogo" role="tabpanel" aria-labelledby="pills-jogo-tab">
-
-                <div class="container-jogo">
-                    <div id="msg-vencedor"></div>
-
-                    <div class="botoesX-jogo">
-                        <input id="proximoValor" value="X" type="hidden" />
-                        <input id="casasPreenchidas" value="" type="hidden" />
-
-                        <div id="casa-1" onclick="jogoDaVelha('casa-1')" class="caixas-jogo"></div>
-                        <div id="casa-2" onclick="jogoDaVelha('casa-2')" class="caixas-jogo borda-lr"></div>
-                        <div id="casa-3" onclick="jogoDaVelha('casa-3')" class="caixas-jogo"></div>
-                        <div id="casa-4" onclick="jogoDaVelha('casa-4')" class="caixas-jogo borda-tb"></div>
-                        <div id="casa-5" onclick="jogoDaVelha('casa-5')" class="caixas-jogo borda-all"></div>
-                        <div id="casa-6" onclick="jogoDaVelha('casa-6')" class="caixas-jogo borda-tb"></div>
-                        <div id="casa-7" onclick="jogoDaVelha('casa-7')" class="caixas-jogo"></div>
-                        <div id="casa-8" onclick="jogoDaVelha('casa-8')" class="caixas-jogo borda-lr"></div>
-                        <div id="casa-9" onclick="jogoDaVelha('casa-9')" class="caixas-jogo"></div>
-
-                        <div id="reiniciar-jogo" onclick="reiniciarJogo()">Reiniciar Jogo</div>
-                    </div>
-                </div>
-            </div>
-            <div class="tab-pane fade" id="pills-musicas" role="tabpanel" aria-labelledby="pills-musicas-tab" style="height:400px">
-                <form id="formulario" method="post">
-                    <input id="idMusica" type="hidden" value="" />
-
-                    <div class="mb-3">
-                        <label for="nomeMusica" class="form-label">Nome da Música</label>
-                        <input id="nomeMusica" class="form-control form-control-sm" type="text" value="" placeholder="Ex.: Nome da música - Artista" style="width:300px" />
-                    </div>
-                    <div class="mb-3">
-                        <label for="generoMusica" class="genero">Gênero Musical</label>
-                        <select id="generoMusica" class="form-select form-select-sm" name="genero" style="width: 150px; margin-top: 8px">
-                            <option selected></option>
-                            <option>Clássica</option>
-                            <option>Eletrônica</option>
-                            <option>Funk</option>
-                            <option>Pop</option>
-                            <option>Rap</option>
-                            <option>Rock</option>
-                            <option>Samba</option>
-                            <option>Sertanejo</option>
-                        </select>
-                    </div>
-                    <div name="divSpotify" class="mb-3">
-                        <label style="margin-bottom: 10px">Tem no Spotify?</label> <br />
-                        <div class="form-check form-check-inline opcoesSpotify">
-                            <input id="spoti-Sim" class="form-check-input" type="radio" value="Sim" name="spotify" />
-                            <label class="form-check-label">Sim</label>
-                        </div>
-                        <div class="form-check form-check-inline opcoesSpotify">
-                            <input id="spoti-Nao" class="form-check-input" type="radio" value="Nao" name="spotify" />
-                            <label class="form-check-label">Não</label>
-                        </div>
-                        <div class="form-check form-check-inline opcoesSpotify">
-                            <input id="spoti-NaoSei" class="form-check-input" type="radio" value="NaoSei" name="spotify" />
-                            <label class="form-check-label">Não sei</label>
-                        </div>
-                    </div>
-                    <div class="mb-3">
-                        <label for="dataCadastro" class="form-label">Data de Cadastro</label>
-                        <input id="dataCadastro" class="form-control form-control-sm" type="text" value="" placeholder="Ex.: 06/06/1994" style="width:125px" />
-                    </div>
-
-                </form>
-                <div style="width: 764px; margin-left: 23%; text-align: center">
-                    <table id="tabela" class="table table-light table-bordered" style="margin-top: 15px; width: 825px">
-                        <tbody id="bodyTabela">
-                            <tr class="table-danger">
-                                <th style="width: 340px">Nome</th>
-                                <th style="width: 100px">Gênero</th>
-                                <th style="width: 70px">Spotify?</th>
-                                <th style="width: 85px">Cadastro</th>
-                                <th style="width: 50px">Opções</th>
-                        </tbody>
-                    </table>
-                    <div id="divBotoes">
-                        <button onclick="gravarDados()" type="button" id="botao-salvar" style="border-radius: 10px; border: 2px solid #dfc2c4">
-                            <img src="~/lib/bootstrap/dist/icons/check2.svg" alt="Bootstrap" width="20" height="20">
-                        </button>
-                        <button onclick="apagarDados()" type="button" id="botao-cancelar" style="border-radius: 10px; border: 2px solid #dfc2c4">
-                            <img src="~/lib/bootstrap/dist/icons/x-lg.svg" alt="Bootstrap" width="20" height="20">
-                        </button>
-                    </div>
-
+                    <div id="reiniciar-jogo" onclick="reiniciarJogo()">Reiniciar Jogo</div>
                 </div>
             </div>
         </div>
+        <div class="tab-pane fade" id="pills-musicas" role="tabpanel" aria-labelledby="pills-musicas-tab" style="height:400px">
+            <form id="formulario" method="post">
+                <input id="idMusica" type="hidden" value="" />
+
+                <div class="mb-3">
+                    <label for="nomeMusica" class="form-label">Nome da Música</label>
+                    <input id="nomeMusica" class="form-control form-control-sm" type="text" value="" placeholder="Ex.: Nome da música - Artista" style="width:300px" />
+                </div>
+                <div class="mb-3">
+                    <label for="generoMusica" class="genero">Gênero Musical</label>
+                    <select id="generoMusica" class="form-select form-select-sm" name="genero" style="width: 150px; margin-top: 8px">
+                        <option selected></option>
+                        <option>Clássica</option>
+                        <option>Eletrônica</option>
+                        <option>Funk</option>
+                        <option>Pop</option>
+                        <option>Rap</option>
+                        <option>Rock</option>
+                        <option>Samba</option>
+                        <option>Sertanejo</option>
+                    </select>
+                </div>
+                <div name="divSpotify" class="mb-3">
+                    <label style="margin-bottom: 10px">Tem no Spotify?</label> <br />
+                    <div class="form-check form-check-inline opcoesSpotify">
+                        <input id="spoti-Sim" class="form-check-input" type="radio" value="Sim" name="spotify" />
+                        <label class="form-check-label">Sim</label>
+                    </div>
+                    <div class="form-check form-check-inline opcoesSpotify">
+                        <input id="spoti-Nao" class="form-check-input" type="radio" value="Nao" name="spotify" />
+                        <label class="form-check-label">Não</label>
+                    </div>
+                    <div class="form-check form-check-inline opcoesSpotify">
+                        <input id="spoti-NaoSei" class="form-check-input" type="radio" value="NaoSei" name="spotify" />
+                        <label class="form-check-label">Não sei</label>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="dataCadastro" class="form-label">Data de Cadastro</label>
+                    <input id="dataCadastro" class="form-control form-control-sm" type="text" value="" placeholder="Ex.: 06/06/1994" style="width:125px" />
+                </div>
+
+            </form>
+            <div style="width: 764px; margin-left: 23%; text-align: center">
+                <table id="tabela" class="table table-light table-bordered" style="margin-top: 15px; width: 825px">
+                    <tbody id="bodyTabela">
+                        <tr class="table-danger">
+                            <th style="width: 340px">Nome</th>
+                            <th style="width: 100px">Gênero</th>
+                            <th style="width: 70px">Spotify?</th>
+                            <th style="width: 85px">Cadastro</th>
+                            <th style="width: 50px">Opções</th>
+                    </tbody>
+                </table>
+                <div id="divBotoes">
+                    <button onclick="gravarDados()" type="button" id="botao-salvar" style="border-radius: 10px; border: 2px solid #dfc2c4">
+                        <img src="~/lib/bootstrap/dist/icons/check2.svg" alt="Bootstrap" width="20" height="20">
+                    </button>
+                    <button onclick="apagarDados()" type="button" id="botao-cancelar" style="border-radius: 10px; border: 2px solid #dfc2c4">
+                        <img src="~/lib/bootstrap/dist/icons/x-lg.svg" alt="Bootstrap" width="20" height="20">
+                    </button>
+                </div>
+
+            </div>
+        </div>
     </div>
+</div>
