@@ -97,6 +97,7 @@ function montarCalculo(valor, tipo) { // Função para montar o cálculo na tab cal
         if (tipo == 'numero') {
             if (total == '') { // Se não é pra reiniciar ainda...
                 if ((valor == ',' && primeiroNumero.indexOf(',') == -1) || valor != ',') { // ... e já tiver vírgula, não põe outra.
+                    
                     if (primeiroNumero.length >= 14)
                         return;
                     document.getElementById('primeiroNumero').innerText += valor;
@@ -117,9 +118,13 @@ function montarCalculo(valor, tipo) { // Função para montar o cálculo na tab cal
         } else { // Se for operador, acrescenta ele no visor.
             if (valor !== '=') {
                 document.getElementById('operador').innerText = valor;
-                document.getElementById('visor').innerText += valor;
+                if (Array.from(primeiroNumero).pop() == ',') {
+                    document.getElementById('primeiroNumero').innerText = primeiroNumero.substring(0, primeiroNumero.length - 1);
+                    document.getElementById('visor').innerText = visor.substring(0, visor.length - 1) + valor;
+                } else
+                    document.getElementById('visor').innerText += valor;
                 return;
-            }
+            } 
         }
     } else { // Se já tiver operador
         if (tipo == 'numero') {

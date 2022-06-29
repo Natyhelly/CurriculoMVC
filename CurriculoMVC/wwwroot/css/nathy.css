@@ -9,11 +9,12 @@ body {
 
 .minhaFoto {
     margin-left: 50%;
-    width: 153px;
-    height: 204px;
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
     z-index: 1;
     border-radius: 50%;
-    border: 2px solid #FFFFFF;
+    border: 9px dotted #FFFFFF;
     cursor: pointer;
 }
 
