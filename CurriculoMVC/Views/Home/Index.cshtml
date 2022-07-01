@@ -2,7 +2,7 @@
     ViewData["Title"] = "Sitezinho Nathy";
 }
 <div id="primeiraDiv" style="width: 20%; height: 250px; float: left; margin-top: -15px">
-        <img src="~/images/eu.png" class="minhaFoto" onclick="mensagemNaFoto('Essa sou eu');">
+    <img src="~/images/eu.png" class="minhaFoto" onclick="mensagemNaFoto('Essa sou eu');">
 </div>
 
 <div id="segundaDiv" style="width: 80%; height: 250px; text-align: center">
@@ -40,19 +40,23 @@
         <li class="nav-item" role="presentation">
             <button onclick="alteraTextPaginaTab('Músicas')" class="nav-link" id="pills-musicas-tab" data-bs-toggle="pill" data-bs-target="#pills-musicas" type="button" role="tab" aria-controls="pills-musicas" aria-selected="false">Músicas</button>
         </li>
+        <li class="nav-item" role="presentation">
+            <button onclick="alteraTextPaginaTab('Currículo')" class="nav-link" id="pills-curriculo-tab" data-bs-toggle="pill" data-bs-target="#pills-curriculo" type="button" role="tab" aria-controls="pills-curriculo" aria-selected="false">Currículo</button>
+        </li>
     </ul>
     <div class="tab-content" id="pills-tabContent">
         <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
 
-            <div id="textoOla" style="margin-left: 20%">
+            <div id="textoOla" style="margin-left: 15%">
                 <text>
-                    Olá! <br /> <br />
+                    <br />
+                    Olá, Seja bem-vindo (a)! <br /> <br />
 
-                    Aosiaofushgj ifjosifjo ijasoijfoaijaifo jf  jofiwjfi jjo ija <br />
-                    ijfoaifja oj faoiefjaoiejawer awefk j <br />
-                    jajfaea  jfaia eklwr awiejfaidfjlan nfa nwel <br />
-                    nwien q a nfwo iefnlkfn <br />
-                    oweifn kfnwaefa
+                    Este é um portfólio criado com o intuíto de mostrar alguns projetos feitos por mim <br />
+                    enquanto estudo programação.<br />
+                    O aprendizado pode ser visualizado desde a criação do site até o conteúdo em cada aba e suas funcionalidades. <br />
+                    Até o momento, há uma calculadora, um jogo chamado Jogo da Velha e um formulário de músicas. <br />
+                    Sinta-se a vontade para jogar e testar o site ;)
                 </text>
             </div>
         </div>
@@ -178,6 +182,16 @@
                     </button>
                 </div>
 
+            </div>
+        </div>
+        <div class="tab-pane fade" id="pills-curriculo" role="tabpanel" aria-labelledby="pills-curriculo-tab">
+            <div id="divDownload">
+                <text>
+                    <br />
+                    Aqui você pode fazer o download do meu currículo <br />
+                    e obter mais informações sobre mim <br />
+                </text>
+                <img src="~/images/download.png" id="iconeDownload"/>
             </div>
         </div>
     </div>

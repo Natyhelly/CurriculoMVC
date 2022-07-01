@@ -113,16 +113,16 @@ body {
     display: flex;
     flex-direction: row;
     padding-top: 45px;
-    width: 50%;
+    width: 65%;
+    justify-content: space-around;
 }
 
 .botoesX-jogo {
     display: flex;
     flex-flow: row wrap;
-    width: 240px;
+    width: 270px;
+    min-width: 250px;
     height: 240px;
-    margin-left: auto;
-    margin-right: -120px;
 }
 
 .caixas-jogo {
@@ -169,7 +169,7 @@ body {
     color: #E300BF;
     text-shadow: 0px 10px 4px #33FF00;
     transform: rotate(-9.9deg);
-    margin-left: 25%;
+    margin-left: 10%;
 }
 
 #formulario {
@@ -181,18 +181,43 @@ body {
     height: 60px;
     margin-left: 23%;
 }
+
 .mb-3 {
     text-align: center;
 }
+
 .form-check-inline {
     margin-right: 0 !important;
 }
+
 .table-danger {
     --bs-table-bg: #F2CCF9 !important;
 }
+
 #divBotoes {
     display: flex;
-    justify-content: space-around; 
+    justify-content: space-around;
     width: 100px;
     margin-left: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+    #textoNome, #divPaginaTab {
+        display: none;
+    }
+}
+
+#divDownload {
+    text-align: center;
+    font-family: 'Birthstone';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 44px;
+    letter-spacing: 0.1em;
+}
+
+#iconeDownload {
+    width: 151px;
+    cursor: pointer;
 }
