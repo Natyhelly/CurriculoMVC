@@ -181,75 +181,75 @@ document.addEventListener("keydown", function pressionarTecla(tecla) {
     switch (tecla.key) {
         case 'Enter':
             document.querySelector("#botao-igual").click();
-            document.querySelector("#botao-igual").style.backgroundColor = 'gray';
+            document.querySelector("#botao-igual").classList.add('botao-active');
             break;
         case 'Escape':
             document.querySelector("#botao-reset").click();
-            document.querySelector("#botao-reset").style.backgroundColor = 'gray';
+            document.querySelector("#botao-reset").classList.add('botao-active');
             break;
         case 'Backspace':
             document.querySelector("#botao-backspace").click();
-            document.querySelector("#botao-backspace").style.backgroundColor = 'gray';
+            document.querySelector("#botao-backspace").classList.add('botao-active');
             break;
         case '/':
             document.querySelector("#botao-dividir").click();
-            document.querySelector("#botao-dividir").style.backgroundColor = 'gray';
+            document.querySelector("#botao-dividir").classList.add('botao-active');
             break;
         case '*':
             document.querySelector("#botao-vezes").click();
-            document.querySelector("#botao-vezes").style.backgroundColor = 'gray';
+            document.querySelector("#botao-vezes").classList.add('botao-active');
             break;
         case '-':
             document.querySelector("#botao-menos").click();
-            document.querySelector("#botao-menos").style.backgroundColor = 'gray';
+            document.querySelector("#botao-menos").classList.add('botao-active');
             break;
         case '+':
             document.querySelector("#botao-mais").click();
-            document.querySelector("#botao-mais").style.backgroundColor = 'gray';
+            document.querySelector("#botao-mais").classList.add('botao-active');
             break;
         case ',':
             document.querySelector("#botao-decimal").click();
-            document.querySelector("#botao-decimal").style.backgroundColor = 'gray';
+            document.querySelector("#botao-decimal").classList.add('botao-active');
             break;
         case '0':
             document.querySelector("#botao-0").click();
-            document.querySelector("#botao-0").style.backgroundColor = 'gray';
+            document.querySelector("#botao-0").classList.add('botao-active');
             break;
         case '1':
             document.querySelector("#botao-1").click();
-            document.querySelector("#botao-1").style.backgroundColor = 'gray';
+            document.querySelector("#botao-1").classList.add('botao-active');
             break;
         case '2':
             document.querySelector("#botao-2").click();
-            document.querySelector("#botao-2").style.backgroundColor = 'gray';
+            document.querySelector("#botao-2").classList.add('botao-active');
             break;
         case '3':
             document.querySelector("#botao-3").click();
-            document.querySelector("#botao-3").style.backgroundColor = 'gray';
+            document.querySelector("#botao-3").classList.add('botao-active');
             break;
         case '4':
             document.querySelector("#botao-4").click();
-            document.querySelector("#botao-4").style.backgroundColor = 'gray';
+            document.querySelector("#botao-4").classList.add('botao-active');
             break;
         case '5':
             document.querySelector("#botao-5").click();
-            document.querySelector("#botao-5").style.backgroundColor = 'gray';
+            document.querySelector("#botao-5").classList.add('botao-active');
             break;
         case '6':
             document.querySelector("#botao-6").click();
-            document.querySelector("#botao-6").style.backgroundColor = 'gray';
+            document.querySelector("#botao-6").classList.add('botao-active');
             break;
         case '7':
             document.querySelector("#botao-7").click();
-            document.querySelector("#botao-7").style.backgroundColor = 'gray';
+            document.querySelector("#botao-7").classList.add('botao-active');
             break;
         case '8':
             document.querySelector("#botao-8").click();
-            document.querySelector("#botao-8").style.backgroundColor = 'gray';
+            document.querySelector("#botao-8").classList.add('botao-active');
             break;
         case '9':
             document.querySelector("#botao-9").click();
-            document.querySelector("#botao-9").style.backgroundColor = 'gray';
+            document.querySelector("#botao-9").classList.add('botao-active');
             break;
         default:
             return; // Quit when this doesn't handle the key event.
@@ -261,58 +261,58 @@ document.addEventListener("keyup", function pressionarTecla(tecla) {
 
     switch (tecla.key) {
         case 'Enter':
-            document.querySelector("#botao-igual").style.backgroundColor = 'white';
+            document.querySelector("#botao-igual").classList.remove('botao-active');
             break;
         case 'Escape':
-            document.querySelector("#botao-reset").style.backgroundColor = 'white';
+            document.querySelector("#botao-reset").classList.remove('botao-active');
             break;
         case 'Backspace':
-            document.querySelector("#botao-backspace").style.backgroundColor = 'white';
+            document.querySelector("#botao-backspace").classList.remove('botao-active');
             break;
         case '/':
-            document.querySelector("#botao-dividir").style.backgroundColor = 'white';
+            document.querySelector("#botao-dividir").classList.remove('botao-active');
             break;
         case '*':
-            document.querySelector("#botao-vezes").style.backgroundColor = 'white';
+            document.querySelector("#botao-vezes").classList.remove('botao-active');
             break;
         case '-':
-            document.querySelector("#botao-menos").style.backgroundColor = 'white';
+            document.querySelector("#botao-menos").classList.remove('botao-active');
             break;
         case '+':
-            document.querySelector("#botao-mais").style.backgroundColor = 'white';
+            document.querySelector("#botao-mais").classList.remove('botao-active');
             break;
         case ',':
-            document.querySelector("#botao-decimal").style.backgroundColor = 'white';
+            document.querySelector("#botao-decimal").classList.remove('botao-active');
             break;
         case '0':
-            document.querySelector("#botao-0").style.backgroundColor = 'white';
+            document.querySelector("#botao-0").classList.remove('botao-active');
             break;
         case '1':
-            document.querySelector("#botao-1").style.backgroundColor = 'white';
+            document.querySelector("#botao-1").classList.remove('botao-active');
             break;
         case '2':
-            document.querySelector("#botao-2").style.backgroundColor = 'white';
+            document.querySelector("#botao-2").classList.remove('botao-active');
             break;
         case '3':
-            document.querySelector("#botao-3").style.backgroundColor = 'white';
+            document.querySelector("#botao-3").classList.remove('botao-active');
             break;
         case '4':
-            document.querySelector("#botao-4").style.backgroundColor = 'white';
+            document.querySelector("#botao-4").classList.remove('botao-active');
             break;
         case '5':
-            document.querySelector("#botao-5").style.backgroundColor = 'white';
+            document.querySelector("#botao-5").classList.remove('botao-active');
             break;
         case '6':
-            document.querySelector("#botao-6").style.backgroundColor = 'white';
+            document.querySelector("#botao-6").classList.remove('botao-active');
             break;
         case '7':
-            document.querySelector("#botao-7").style.backgroundColor = 'white';
+            document.querySelector("#botao-7").classList.remove('botao-active');
             break;
         case '8':
-            document.querySelector("#botao-8").style.backgroundColor = 'white';
+            document.querySelector("#botao-8").classList.remove('botao-active');
             break;
         case '9':
-            document.querySelector("#botao-9").style.backgroundColor = 'white';
+            document.querySelector("#botao-9").classList.remove('botao-active');
             break;
         default:
             return;

@@ -91,6 +91,10 @@ body {
         background-color: gray;
     }
 
+.botao-active {
+    background-color: gray;
+}
+
 .container-calculadora {
     display: flex;
     flex-direction: column;
