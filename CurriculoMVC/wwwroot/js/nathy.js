@@ -416,6 +416,9 @@ function validaCamposFormulario(nome, genero, spotify, cadastro) {
         alert('Preencha todos os campos para salvar');
         return false;
     }
+
+    // Exemplo de código para validar um formato específico de data: 00/00/0000
+
     //var padraoData = /^[0-9]{2}\/[0-9]{2}\/[0-9]{4}$/;
     //if (!padraoData.test(cadastro)) {
     //    alert("Digite a data no formato dd/mm/aaaa");
