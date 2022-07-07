@@ -2,6 +2,15 @@
 //    numeral.register('locales', 'pt-br');
 //});
 
+function activeLink(ancora) {
+    var testeTab = document.getElementsByClassName('teste');
+
+    for (let i = 0; i < testeTab.length; i++) {
+        testeTab[i].classList.remove('active')
+    }
+    ancora.classList.add('active');
+}
+
 function alteraTextPaginaTab(text) {
     document.getElementById('textPaginaTab').innerText = text;
 }

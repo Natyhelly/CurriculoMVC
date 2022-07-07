@@ -4,11 +4,11 @@ using System.Diagnostics;
 
 namespace CurriculoMVC.Controllers
 {
-    public class HomeController : Controller
+    public class CalculadoraController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly ILogger<CalculadoraController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        public CalculadoraController(ILogger<CalculadoraController> logger)
         {
             _logger = logger;
         }

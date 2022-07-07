@@ -1,0 +1,39 @@
+﻿@{
+    ViewData["Title"] = "Calculadora";
+}
+
+        <div style="padding-left: 48%">
+            <input id="primeiroNumero" type="hidden" />
+            <input id="segundoNumero" type="hidden" />
+            <input id="operador" type="hidden" />
+            <input id="total" type="hidden" />
+
+            <div class="container-calculadora">
+                <div id="visor" class="visor-calculadora">0</div>
+                <div class="container-botoes">
+                    <div class="container-numeros">
+                        <div id="botao-reset" onclick="montarCalculo('C','operador')" class="caixas"> C </div>
+                        <div id="botao-dividir" onclick="montarCalculo('/','operador')" class="caixas"> / </div>
+                        <div id="botao-vezes" onclick="montarCalculo('*','operador')" class="caixas"> * </div>
+                        <div id="botao-7" onclick="montarCalculo('7','numero')" class="caixas"> 7 </div>
+                        <div id="botao-8" onclick="montarCalculo('8','numero')" class="caixas"> 8 </div>
+                        <div id="botao-9" onclick="montarCalculo('9','numero')" class="caixas"> 9 </div>
+                        <div id="botao-4" onclick="montarCalculo('4','numero')" class="caixas"> 4 </div>
+                        <div id="botao-5" onclick="montarCalculo('5','numero')" class="caixas"> 5 </div>
+                        <div id="botao-6" onclick="montarCalculo('6','numero')" class="caixas"> 6 </div>
+                        <div id="botao-1" onclick="montarCalculo('1','numero')" class="caixas"> 1 </div>
+                        <div id="botao-2" onclick="montarCalculo('2','numero')" class="caixas"> 2 </div>
+                        <div id="botao-3" onclick="montarCalculo('3','numero')" class="caixas"> 3 </div>
+                        <div id="botao-0" onclick="montarCalculo('0','numero')" class="caixas" style="width: 100px"> 0 </div>
+                        <div id="botao-decimal" onclick="montarCalculo(',','numero')" class="caixas"> , </div>
+                    </div>
+                    <div class="container-simbolo">
+                        <div id="botao-backspace" onclick="montarCalculo('<-','operador')" class="caixas" style="font-size: 20px; padding-top: 15%"> ⌫ </div>
+                        <div id="botao-menos" onclick="montarCalculo('-','operador')" class="caixas"> - </div>
+                        <div id="botao-mais" onclick="montarCalculo('+','operador')" class="caixas"> + </div>
+                        <div id="botao-igual" onclick="montarCalculo('=','operador')" class="caixas" style="padding-top: 50%; width: 50px; height: 100px"> = </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+   

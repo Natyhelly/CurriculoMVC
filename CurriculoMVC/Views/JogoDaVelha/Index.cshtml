@@ -1,0 +1,29 @@
+﻿@{
+    ViewData["Title"] = "Jogo da Velha";
+}
+
+        <div>
+
+            <div class="container-jogo">
+                <div id="msg-vencedor"></div>
+
+                <div class="botoesX-jogo">
+                    <input id="proximoValor" value="X" type="hidden" />
+                    <input id="casasPreenchidas" value="" type="hidden" />
+
+                    <div id="casa-1" onclick="jogoDaVelha('casa-1')" class="caixas-jogo"></div>
+                    <div id="casa-2" onclick="jogoDaVelha('casa-2')" class="caixas-jogo borda-lr"></div>
+                    <div id="casa-3" onclick="jogoDaVelha('casa-3')" class="caixas-jogo"></div>
+                    <div id="casa-4" onclick="jogoDaVelha('casa-4')" class="caixas-jogo borda-tb"></div>
+                    <div id="casa-5" onclick="jogoDaVelha('casa-5')" class="caixas-jogo borda-all"></div>
+                    <div id="casa-6" onclick="jogoDaVelha('casa-6')" class="caixas-jogo borda-tb"></div>
+                    <div id="casa-7" onclick="jogoDaVelha('casa-7')" class="caixas-jogo"></div>
+                    <div id="casa-8" onclick="jogoDaVelha('casa-8')" class="caixas-jogo borda-lr"></div>
+                    <div id="casa-9" onclick="jogoDaVelha('casa-9')" class="caixas-jogo"></div>
+
+                    <div id="reiniciar-jogo" onclick="reiniciarJogo()">Reiniciar Jogo</div>
+                </div>
+            </div>
+        </div>
+        
+   
