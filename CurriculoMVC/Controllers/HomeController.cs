@@ -18,6 +18,11 @@ namespace CurriculoMVC.Controllers
             return View();
         }
 
+        public ActionResult ChangePartial(string partialNameController)
+        {
+            return PartialView(partialNameController);
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

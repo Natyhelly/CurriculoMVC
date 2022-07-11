@@ -2,17 +2,11 @@
 //    numeral.register('locales', 'pt-br');
 //});
 
-function activeLink(ancora) {
-    var testeTab = document.getElementsByClassName('teste');
-
-    for (let i = 0; i < testeTab.length; i++) {
-        testeTab[i].classList.remove('active')
-    }
-    ancora.classList.add('active');
-}
-
-function alteraTextPaginaTab(text) {
+function alteraTextPaginaTab(text, partialNameJs) {
     document.getElementById('textPaginaTab').innerText = text;
+
+    var url = '/Home/ChangePartial';
+    $('#partialContent').load(url, { partialNameController: partialNameJs });
 }
 
 function mensagemNaFoto(mensagem) {

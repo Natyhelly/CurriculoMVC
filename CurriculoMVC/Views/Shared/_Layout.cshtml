@@ -11,62 +11,15 @@
     @*<link rel="stylesheet" href="~/CurriculoMVC.styles.css" asp-append-version="true" />*@
 </head>
 <body>
-    <div id="primeiraDiv" style="width: 20%; height: 250px; float: left; margin-top: -15px">
-        <img src="~/images/eu.png" class="minhaFoto" onclick="mensagemNaFoto('Essa sou eu');">
-    </div>
-
-    <div id="segundaDiv" style="width: 80%; height: 250px; text-align: center">
-        <div id="textoNome" style="width: 100%">
-            <text onclick="alert('Meu nome')">
-                NATHYELLY LAGUNA ABREU
-            </text>
-        </div>
-
-        <div id="divPaginaTab" style="width: 100%">
-            <text id="textPaginaTab">
-                @ViewData["Title"]
-            </text>
-        </div>
-
-        <a href="https://github.com/Natyhelly" target="_blank" class="vetores" style="z-index: 3; margin-top: 148px; right: 46px">
-            <img src="~/images/github.png" style="height: 34px; border-radius: 50%">
-        </a>
-        <a href="https://www.linkedin.com/in/nathyelly-laguna-abreu/" target="_blank" class="vetores" style="z-index: 3; margin-top: 148px; right: 88px;">
-            <img src="~/images/linkedin.png" style="width: 35px; height: 34px; border-radius: 50%">
-        </a>
-    </div>
-    <div id="quartaDiv" style="width: 100%; border-top: 2px solid #D1FFFC">
-
-        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-            <li class="nav-item" role="presentation">
-                <a onclick="activeLink(this)" class="nav-link active teste" aria-current="page" href="~/Home/Index">Sobre mim</a>
-                @*<button onclick="alteraTextPaginaTab('Sobre mim')" class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Sobre Mim</button>*@
-            </li>
-            <li class="nav-item" role="presentation">
-                <a onclick="activeLink(this)" class="nav-link teste" href="~/Calculadora/Index">Calculadora</a>
-                @*<button onclick="alteraTextPaginaTab('Calculadora')" class="nav-link" id="pills-calculator-tab" data-bs-toggle="pill" data-bs-target="#pills-calculator" type="button" role="tab" aria-controls="pills-calculator" aria-selected="false">Calculadora</button>*@
-            </li>
-            <li class="nav-item" role="presentation">
-                <a onclick="activeLink(this)" class="nav-link teste" href="~/JogoDaVelha/Index">Jogo da Velha</a>
-                @*<button onclick="alteraTextPaginaTab('Jogo da Velha')" class="nav-link" id="pills-jogo-tab" data-bs-toggle="pill" data-bs-target="#pills-jogo" type="button" role="tab" aria-controls="pills-jogo" aria-selected="false">Jogo da Velha</button>*@
-            </li>
-
-
-            <li class="nav-item" role="presentation">
-                <button onclick="alteraTextPaginaTab('Músicas')" class="nav-link" id="pills-musicas-tab" data-bs-toggle="pill" data-bs-target="#pills-musicas" type="button" role="tab" aria-controls="pills-musicas" aria-selected="false">Músicas</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button onclick="alteraTextPaginaTab('Currículo')" class="nav-link" id="pills-curriculo-tab" data-bs-toggle="pill" data-bs-target="#pills-curriculo" type="button" role="tab" aria-controls="pills-curriculo" aria-selected="false">Currículo</button>
-            </li>
-        </ul>
+   
         <div>
 
             @RenderBody()
 
         </div>
-    </div>
+    
 
-    @*<script src="~/lib/jquery/dist/jquery.min.js"></script>*@
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/nathy.js" asp-append-version="true"></script>
     @*@await RenderSectionAsync("Scripts", required: false)*@

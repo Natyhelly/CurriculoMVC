@@ -1,20 +1,57 @@
 ﻿@{
-    ViewData["Title"] = "Sobre mim";
+    ViewData["Title"] = "Portfólio Nathy";
 }
 
-        <div>
+<div id="primeiraDiv" style="width: 20%; height: 250px; float: left; margin-top: -15px">
+    <img src="~/images/eu.png" class="minhaFoto" onclick="mensagemNaFoto('Essa sou eu');">
+</div>
 
-            <div id="textoOla" style="margin-left: 15%">
-                <text>
-                    <br />
-                    Olá, Seja bem-vindo (a)! <br /> <br />
+<div id="segundaDiv" style="width: 80%; height: 250px; text-align: center">
+    <div id="textoNome" style="width: 100%">
+        <text onclick="alert('Meu nome')">
+            NATHYELLY LAGUNA ABREU
+        </text>
+    </div>
 
-                    Este é um portfólio criado com o intuíto de mostrar alguns projetos feitos por mim <br />
-                    enquanto estudo programação.<br />
-                    O aprendizado pode ser visualizado desde a criação do site até o conteúdo em cada aba e suas funcionalidades. <br />
-                    Até o momento, há uma calculadora, um jogo chamado Jogo da Velha e um formulário de músicas. <br />
-                    Sinta-se a vontade para jogar e testar o site ;)
-                </text>
-            </div>
-        </div>
-   
+    <div id="divPaginaTab" style="width: 100%">
+        <text id="textPaginaTab">
+            @ViewData["Title"]
+        </text>
+    </div>
+
+
+</div>
+<div id="quartaDiv" style="width: 100%; border-top: 2px solid #D1FFFC">
+    <a href="https://github.com/Natyhelly" target="_blank" class="vetores" style="z-index: 3; margin-top: 8px; right: 46px">
+        <img src="~/images/github.png" style="height: 34px; border-radius: 50%">
+    </a>
+    <a href="https://www.linkedin.com/in/nathyelly-laguna-abreu/" target="_blank" class="vetores" style="z-index: 3; margin-top: 8px; right: 88px;">
+        <img src="~/images/linkedin.png" style="width: 35px; height: 34px; border-radius: 50%">
+    </a>
+
+    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button onclick="alteraTextPaginaTab('Sobre mim', 'Partials/SobreMim')" class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Sobre Mim</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button onclick="alteraTextPaginaTab('Calculadora', 'Partials/Calculadora')" class="nav-link" id="pills-calculator-tab" data-bs-toggle="pill" data-bs-target="#pills-calculator" type="button" role="tab" aria-controls="pills-calculator" aria-selected="false">Calculadora</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button onclick="alteraTextPaginaTab('Jogo da Velha', 'Partials/JogoDaVelha')" class="nav-link" id="pills-jogo-tab" data-bs-toggle="pill" data-bs-target="#pills-jogo" type="button" role="tab" aria-controls="pills-jogo" aria-selected="false">Jogo da Velha</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button onclick="alteraTextPaginaTab('Músicas', 'Partials/Musicas')" class="nav-link" id="pills-musicas-tab" data-bs-toggle="pill" data-bs-target="#pills-musicas" type="button" role="tab" aria-controls="pills-musicas" aria-selected="false">Músicas</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button onclick="alteraTextPaginaTab('Currículo', 'Partials/Curriculo')" class="nav-link" id="pills-curriculo-tab" data-bs-toggle="pill" data-bs-target="#pills-curriculo" type="button" role="tab" aria-controls="pills-curriculo" aria-selected="false">Currículo</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a href="~/Teste/Index" class="nav-link">Teste</a>
+        </li>
+    </ul>
+</div>
+
+<div id="partialContent">
+    <partial name="Partials/SobreMim" />
+</div>
+
